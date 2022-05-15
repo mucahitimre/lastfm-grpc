@@ -1,0 +1,85 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "LastfmProtosClient";
+
+package Lastfm.Protos;
+
+service LastfmService {
+  rpc GetLovedTracks (LovedTrackRequest) returns (LovedTrackResponse);
+}
+
+message LovedTrackRequest {
+}
+
+message LovedTrackResponse {
+  Lovedtracks Lovedtracks = 1;
+}
+
+message Lovedtracks
+{
+    repeated Track Track =1;
+    
+    Attr Attr =2;
+}
+
+message Attr
+{
+    string User=1;
+
+    int32  TotalPages=2;
+
+    int32  Page=3;
+
+    int32  PerPage=4;
+
+    int32  Total=5;
+}
+
+message Track
+{
+    Artist Artist=1;
+
+    Date Date=2;
+
+    string Mbid=3;
+
+    string Url=4;
+
+    string Name=5;
+
+    repeated Image Image = 6;
+
+    Streamable Streamable = 7;
+}
+
+message Artist
+{
+    string Url=1;
+
+    string Name=2;
+
+    string Mbid=3;
+}
+
+message Date
+{
+    int32  Uts=1;
+
+    string Text=2;
+}
+
+message Image
+{
+    Size Size=1;
+
+    string Text=2;
+}
+
+message Streamable
+{
+    int32  Fulltrack=1;
+
+    int32  Text=2;
+}
+
+enum Size { Extralarge = 0; Large=1; Medium=2; Small=3; }
