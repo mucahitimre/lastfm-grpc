@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lastfm.gRPC.Client", "Lastf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lastfm.gRPC.Server", "Lastfm.gRPC.Server\Lastfm.gRPC.Server.csproj", "{447ECC33-B00E-4D22-9B3E-CDCB3E04B7FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lastfm.Client", "Lastfm.Client\Lastfm.Client.csproj", "{EBE87B3A-1B04-4711-B089-048E7EFE3CDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{447ECC33-B00E-4D22-9B3E-CDCB3E04B7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{447ECC33-B00E-4D22-9B3E-CDCB3E04B7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{447ECC33-B00E-4D22-9B3E-CDCB3E04B7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE87B3A-1B04-4711-B089-048E7EFE3CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE87B3A-1B04-4711-B089-048E7EFE3CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE87B3A-1B04-4711-B089-048E7EFE3CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE87B3A-1B04-4711-B089-048E7EFE3CDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

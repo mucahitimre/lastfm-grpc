@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 
-namespace RabbitMQ.PostOffice.Lastfm.Listener.Api.Http;
+namespace Lastfm.Client.Http;
 
 /// <summary>
 /// The HTTP handler

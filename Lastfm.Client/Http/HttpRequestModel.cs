@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 
-namespace RabbitMQ.PostOffice.Lastfm.Listener.Api.Http;
+namespace Lastfm.Client.Http;
 
 /// <summary>
 /// The HTTP request model

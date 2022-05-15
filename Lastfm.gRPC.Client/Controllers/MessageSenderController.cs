@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace RabbitMQ.PostOffice.Publisher.Web.Controllers
+namespace Lastfm.gRPC.Client.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

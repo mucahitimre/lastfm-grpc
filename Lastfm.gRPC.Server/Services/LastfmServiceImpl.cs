@@ -1,15 +1,14 @@
 ﻿using Grpc.Core;
+using Lastfm.Client.Services;
 using LastfmProtos;
-using RabbitMQ.PostOffice.Lastfm.Listener.Api.Services;
 
 public class LastfmServiceImpl : LastfmService.LastfmServiceBase
 {
     public override Task<LovedTrackResponse> GetLovedTracks(LovedTrackRequest request, ServerCallContext context)
     {
-        var tracks = Lastfm.UserGetLovedTracks();
+        var tracks = LastfmServiceClient.UserGetLovedTracks();
 
         var model = new LovedTrackResponse();
-
         var list = new List<Track>();
         tracks.Lovedtracks.Track.ForEach(e =>
         {

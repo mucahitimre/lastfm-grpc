@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace RabbitMQ.PostOffice.Lastfm.Listener.Api.Models;
+namespace Lastfm.Client.Models;
 
 /// <summary>
 /// The loved track

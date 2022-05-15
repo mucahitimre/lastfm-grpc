@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 
-namespace RabbitMQ.PostOffice.Lastfm.Listener.Api.Handlers;
+namespace Lastfm.Client.Handlers;
 
 /// <summary>
 /// The enum reflection

@@ -1,12 +1,12 @@
-﻿using Newtonsoft.Json;
-using RabbitMQ.PostOffice.Lastfm.Listener.Api.Handlers;
-using RabbitMQ.PostOffice.Lastfm.Listener.Api.Http;
-using RabbitMQ.PostOffice.Lastfm.Listener.Api.Models;
+﻿using Lastfm.Client.Handlers;
+using Lastfm.Client.Http;
+using Lastfm.Client.Models;
+using Newtonsoft.Json;
 using System.Net;
 
-namespace RabbitMQ.PostOffice.Lastfm.Listener.Api.Services
+namespace Lastfm.Client.Services
 {
-    public static class Lastfm
+    public static class LastfmServiceClient
     {
         public static LovedTrack UserGetLovedTracks()
         {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace RabbitMQ.PostOffice.Lastfm.Listener.Api.Models;
+namespace Lastfm.Client.Models;
 
 /// <summary>
 /// The lastfm method type.
