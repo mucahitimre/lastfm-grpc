@@ -25,12 +25,12 @@ namespace Lastfm.Client.Services
         {
             var headers = new Dictionary<string, string>();
 
-            // https://ws.audioscrobbler.com/2.0/?method=user.getlovedtracks&user=kolombokunta&api_key=2e797413106c040d565dc01ba07bb857&format=json&limit=500
+            // https://ws.audioscrobbler.com/2.0/?method=user.getlovedtracks&user=kolombokunta&api_key=&format=json&limit=500
             var parameters = new Dictionary<string, string>()
             {
                 { "user", "kolombokunta" },
                 { "limit", "550" },
-                { "api_key", "2e797413106c040d565dc01ba07bb857" },
+                { "api_key", "" },
                 { "format", "json" }
             };
 
