@@ -6,6 +6,11 @@ package Lastfm.Protos;
 
 service LastfmService {
   rpc GetLovedTracks (LovedTrackRequest) returns (LovedTrackResponse);
+  rpc GetLovedTracksStream (LovedTrackStreamRequest) returns (stream LovedTrackResponse);
+}
+
+message LovedTrackStreamRequest {
+    int32 Count = 1;
 }
 
 message LovedTrackRequest {
